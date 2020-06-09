@@ -5,28 +5,58 @@
   // background: red;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  @include atSmall {
+  margin-bottom: 50px;
+  @include atMedium {
+    flex-direction: row;
   }
 }
 .navbar-logo {
-  // background-color: red;
-  margin-left: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-decoration: none;
+  color: $mainDark;
+
+  margin-top: 30px;
+
+  @include atSmall {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: row;
+  }
+
+  @include atMedium {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .navlist {
-  // background: yellowgreen;
-  width: 600px;
-  height: 50px;
+  width: 100%;
+  // background: red;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+
+  @include atSmall {
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-evenly;
+  }
 }
 .navlist-item {
+  margin: auto;
+  // margin-bottom: 10px;
   list-style: none;
+  // background: yellow;
 
   a {
     text-decoration: none;

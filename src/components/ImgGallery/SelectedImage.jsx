@@ -27,14 +27,16 @@ const SelectedImage = ({
   return (
     <div
       style={{ margin, height: photo.height, width: photo.width, ...cont }}
-      className={"not-selected"}
+      className={"imgGallery-img"}
     >
       {/* <Checkmark selected={isSelected ? true : false} /> */}
-
+      <div className="imgGallery-img-cover">
+        <h1>{photo.name}</h1>
+      </div>
       <a href={photo.destination}>
         <img
           alt={photo.title}
-          style={imgStyle}
+          // style={imgStyle}
           {...photo}
           onClick={handleOnClick}
         />

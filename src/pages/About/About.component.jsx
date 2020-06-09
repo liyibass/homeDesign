@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./About.style.scss";
 import Button from "../../components/Button/Button.component";
+import { motion } from "framer-motion";
 
 function About() {
   const [page, setPage] = useState([true, false, false, false]);
@@ -21,7 +22,12 @@ function About() {
     }
   }, [page]);
   return (
-    <div className="aboutPage">
+    <motion.div
+      className="aboutPage"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="aboutSectionSwitchs">
         <span
           className="sectionSwitch"
@@ -128,7 +134,7 @@ function About() {
           ▾監工程造費 以總工程款8~10%計算(視個案而定) <br />
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
