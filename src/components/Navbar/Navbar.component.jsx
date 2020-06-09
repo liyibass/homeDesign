@@ -13,7 +13,7 @@ function Navbar() {
   ];
   return (
     <div className="navbar">
-      <a href="/Main" className="navbar-logo">
+      <a href="/" className="navbar-logo">
         <i className="fab fa-adn fa-4x"></i>
         <h4>八德設計</h4>
       </a>

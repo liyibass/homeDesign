@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "liyiproject-bab2d"
+  },
+  "targets": {
+    "liyiproject-bab2d": {
+      "hosting": {
+        "liyiproject": [
+          "home-design"
+        ]
+      }
+    }
   }
 }

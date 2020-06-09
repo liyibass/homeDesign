@@ -20,7 +20,7 @@ function Homepage() {
       <AnimatePresence>
         <Navbar />
         <Switch>
-          <Route exact path="/Main" component={Main} />
+          <Route exact path="/" component={Main} />
           <Route exact path="/Gallery" component={ImgGallery} />
           <Route exact path="/About" component={About} />
           <Route exact path="/Awards" component={Awards} />
