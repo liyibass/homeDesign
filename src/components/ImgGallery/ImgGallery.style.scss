@@ -1,0 +1,13 @@
+.imgGallery {
+  button {
+    width: 100px;
+  }
+
+  img {
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
